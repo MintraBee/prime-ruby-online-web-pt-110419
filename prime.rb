@@ -13,3 +13,8 @@ def prime?(number)
   end
    puts check
 end
+
+def prime?(2))
+  range = (1..5).to_a
+  check = true 
+end
