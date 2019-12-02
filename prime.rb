@@ -1,18 +1,15 @@
-def is_prime(num)
-  n = 2
-  while n < num
-    return false if num % n == 0
-    n += 1
+def prime?(number)
+  range = (2..(number - 1)).to_a
+  check = true
+  if number < 2
+    check = false
+  else
+    range.each do |x|
+      if number % x == 0
+        check = false
+        break
+      end
+    end
   end
-  true
-end
-
-
-
-
-def is_prime(num)
-  (2..(num - 1)).each do |n|
-    return false if num % n == 0
-  end
-  true
+   puts check
 end
